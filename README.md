@@ -18,7 +18,7 @@ you have to add this code to end of each cronjob command:
 ```
 ```
 # for example turn:
-* * * * * /usr/bin/cron_metrics
+* * * * * root /usr/bin/cron_metrics
 to
-* * * * * /usr/bin/cron_metrics > /tmp/cron_$$.log 2>&1; /usr/bin/cron_tracker $? $$ < /tmp/cron_$$.log
+* * * * * root /usr/bin/cron_metrics > /tmp/cron_$$.log 2>&1; /usr/bin/cron_tracker $? $$ < /tmp/cron_$$.log
 ```
