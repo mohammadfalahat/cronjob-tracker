@@ -1,4 +1,6 @@
-## Track how cronjobs are going with Grafana 
+## Track how cronjob fails and success runs
+
+This script should save errors in `/var/log/cron.error.log` and success runs in `/var/log/cron.success.log`
 
 1. install cronjob tracker
 2. add additive to your cronjob commands
